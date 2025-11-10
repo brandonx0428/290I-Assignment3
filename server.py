@@ -27,7 +27,7 @@ async def create_upload_file(file: UploadFile):
         # Just to confirm it's valid JSON syntax
         import json
         json.loads(contents)
-
+        active_graph = json.loads(contents)
         # If successful
         return {"Upload Success": file.filename}
 
